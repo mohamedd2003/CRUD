@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD </title>
+</head>
+
+<body>
+    <section id="crud" class="min-vh-100">
+        <header>
+            <div class="head m-auto d-flex justify-content-center  opacity-50">
+                <span class="header-icons mt-5 ">
+                    <i class="mx-1 fa-brands fa-8x main-color fa-cuttlefish"></i>
+                    <i class="mx-1 fa-regular fa-8x main-color fa-registered"></i>
+                    <i class="mx-1 fa-brands fa-8x main-color fa-uniregistry"></i>
+                    <i class="mx-1 fa-brands fa-8x main-color fa-dyalog"></i>
+                </span>
+            </div>
+        </header>
+        <section>
+            
+             <div class="crud m-auto w-75 mt-5 bg-main-color   py-5 px-3">
+                    <label class="main-color mb-1 fst-italic fs-5 " >Employee Name <span id="nameImportant" class="text-danger fs-3">*</span></label>
+                    <input type="text" class="form-control  bg-transparent text-white" id="employeeName">
+                        <div id="nameAlert" class="alert alert-danger p-1 mt-3 d-none ">
+                            <i class=" me-1 fa-solid fa-exclamation "></i>
+                            Employee Name Should Start With Capital character (Maximum characters is 30)
+                        </div>
+
+                        <label class="main-color mb-1 fst-italic fs-5" >Employee Age <span id="ageImportant" class="text-danger fs-3">*</span></label>
+                        <input type="number" class="form-control  bg-transparent text-white" id="employeeAge">
+                        <div id="ageAlert" class="alert alert-danger p-1 mt-3 d-none "><i class=" me-1 fa-solid fa-exclamation "></i>Employee's age must be over 18 years (The oldest age is 80)</div>
+    
+                        <label class="main-color mb-1 fst-italic fs-5" >Employee city <span id="cityImportant" class="text-danger fs-3">*</span></label>
+                        <input type="text" class="form-control  bg-transparent text-white" id="employeeCity">
+                        <div id="cityAlert" class="alert alert-danger p-1 mt-3 d-none "><i class=" me-1 fa-solid fa-exclamation "></i>Cities Should Start With Capital character</div>
+                        
+                        <label class="main-color mb-1 fst-italic fs-5" >Employee Email <span id="emailImportant" class="text-danger fs-3">*</span></label>
+                        <input type="email" class="form-control  bg-transparent text-white" id="employeeEmail">
+                        <div id="emailAlert" class="alert alert-danger p-1 mt-3 d-none ">
+                            You have entered an invalid email address! <br class="mt-1"> Example: YourName@gmail.com
+                        </div>
+                        
+                        
+                        <label class="main-color mb-1 fst-italic fs-5" >Employee Number <span id="numberImportant" class="text-danger fs-3">*</span></label>
+                        <input type="number" class="form-control  bg-transparent text-white" id="employeeNumber" >
+                        <div id="numberAlert" class="alert alert-danger p-1 mt-3 d-none ">
+                            Enter the 11-digit number starting with 01
+                        </div>
+                        
+                   
+                    <button  id="addBtn" class=" btn btn-outline-info float-end mt-3"><span> <i class=" me-2 fa-solid fa-user-plus"></i></span>Add Employee</button>
+                    <button id="reset"  class=" px-2 btn  me-2 btn-outline-secondary float-end mt-3"><span> <i class="fa-solid me-2 fa-broom"></i></span>Reset Form</button>
+                          
+                    <div class="clearfix"></div>
+    
+               
+             </div>
+            
+           
+            <div class=" bg-main-color py-2 px-3 mt-5 m-auto w-75">
+                <h3 class="text-center  mt-5 text-info ">Employees Details</h3>
+
+                <table class="  text-white  table table-striped  ">
+                    <input onkeyup="search(this.value)" type="text" class="form-control my-4 bg-transparent text-white m-auto w-75" placeholder="Search by Employee Name" id="search">
+                    <thead>
+                        <th> Name</th>
+                        <th>Age</th>
+                        <th> City</th>
+                        <th> Email</th>
+                        <th> Number</th>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </section>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+<!--<i class="fa-sharp fa-solid fa-copyright"></i>
+                <i class="fa-brands fa-readme"></i>
+                <i class="fa-solid fa-trash"></i>
+                <i class="fa-solid fa-delete-left"></i>
+                <i class="fa-solid fa-user-minus"></i>  -->
