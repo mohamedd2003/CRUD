@@ -330,28 +330,7 @@ employeeNumberInput.onkeyup = function () {
   validateNumber()
 }
 
-// let Form =document.getElementById('form');
-// document.getElementById('employee').addEventListener('click',function () {
-//     Form.addEventListener('submit',function(e){
-//         e.preventDefault();
-//         addEmployee();
-//         localStorage.setItem("employeesDetails", JSON.stringify(employees));
-//         displayEmployeeDetails();
 
-//     });
-// });
-
-// //check if all validation return true and allow user to submit the form
-//   function submitForm(){
-
-
-//  else{
-//  
-  
-//  }
-
-//   }
-//  submitForm()
 
 
 
